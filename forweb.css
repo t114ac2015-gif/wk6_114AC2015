@@ -1,0 +1,205 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDF2C5;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+    width: 1120px;
+    margin: 30px auto 0;
+}
+
+/* 標題整個區域 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* 左側標題 */
+header h1 {
+    color: #778A50;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+
+/* 右上角圖示和按鈕 */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FB 和 IG */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* LOGIN 和 JOIN */
+.header-buttons {
+    display: flex;
+    gap: 8px;
+    border-left: 1px solid #778A50;
+    padding-left: 8px;
+}
+
+.header-buttons button {
+    background-color: transparent;
+    border: 1px solid #778A50;
+    border-radius: 2px;
+    color: #778A50;
+    font-size: 9px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #778A50;
+    border-radius: 3px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    height: 44px;
+    gap: 50px;
+}
+
+nav li {
+    color: #F7FBDA;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.vegetables,
+.contact {
+    width: 47%;
+}
+
+h2 {
+    background-color: #778A50;
+    color: #F7FBDA;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 0 0 10px 0;
+    border-radius: 2px;
+}
+
+.vegetable-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.vegetable-item {
+    width: calc((100% - 20px) / 3);
+}
+
+.vegetable-item img {
+    width: 100%;
+    height: 94px;
+    object-fit: cover;
+    display: block;
+}
+
+.vegetable-item p {
+    color: #778A50;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.vegetable-item span {
+    color: #858585;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.contact-text {
+    background-color: #F7FBDA;
+    padding: 12px 10px;
+    color: #858585;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+.contact-text p {
+    margin: 0;
+}
+
+.contact-text hr {
+    border: none;
+    border-top: 1px solid #858585;
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #778A50;
+    color: #F7FBDA;
+    text-align: center;
+    margin-top: 78px;
+    padding: 12px 0;
+    font-size: 8px;
+    border-radius: 2px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .vegetables,
+    .contact {
+        width: 100%;
+    }
+
+    .main-img {
+        height: 220px;
+    }
+
+    nav ul {
+        gap: 20px;
+        padding: 0 10px;
+    }
+}
